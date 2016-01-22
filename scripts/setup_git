@@ -1,13 +1,10 @@
 #!/bin/bash
 # configuring usernames
-git config --global user.name "renan-ranelli"
-git config --global user.email "renanranelli@gmail.com"
+git config --global user.name "Brunno dos Santos"
+git config --global user.email "squiter85@gmail.com"
 
 # use the new behavior for push
 git config --global push.default simple
 
 # do not change crlf configuration
 git config --global core.autocrlf false
-
-# setting up the template
-git config --global commit.template ~/.gitcommittemplate
