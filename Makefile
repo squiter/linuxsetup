@@ -24,7 +24,6 @@ endef
 REQUIRED_MODULES = \
 	bash-completion	\
 	code		\
-	dotfiles	\
 	emacs		\
 	git		\
 	langtool 	\
@@ -162,9 +161,6 @@ $(MODULE_DIR)/packages: | repositories
 
 ###
 # Install programming stuff
-$(MODULE_DIR)/dotfiles:
-	$(CURDIR)/scripts/setup_dotfiles
-
 $(MODULE_DIR)/git: | packages
 	$(CODE_DIR)/linuxsetup/scripts/setup_git
 
