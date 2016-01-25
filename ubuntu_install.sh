@@ -14,10 +14,10 @@ if [ ! -f ~/.ssh/id_rsa.pub ]; then
 fi
 
 
-mkdir $HOME/code
-cd $HOME/code
+mkdir $HOME/projetos
+cd $HOME/projetos
 
-git clone git@github.com:rranelli/linuxsetup.git
+git clone git@github.com:squiter/linuxsetup.git
 cd linuxsetup
 
 make
