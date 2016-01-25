@@ -27,7 +27,6 @@ REQUIRED_MODULES = \
 	emacs		\
 	git		\
 	langtool	\
-	repositories	\
 	ruby
 
 OPTIONAL_MODULES = \
@@ -95,7 +94,7 @@ $(MODULE_DIR)/spotify-repo:
 
 ###
 # Install packages
-$(MODULE_DIR)/packages: | repositories
+$(MODULE_DIR)/packages:
 	$(install-packages)
 
 ###
