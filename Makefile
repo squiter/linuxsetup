@@ -145,8 +145,6 @@ $(MODULE_DIR)/langtool: | packages
 # Install desktop stuff
 $(MODULE_DIR)/desktop: PACKAGES = \
 		firefox				\
-		flashplugin-installer		\
-		icedtea-7-plugin		\
 		pidgin				\
 		spotify-client			\
 		telegram
