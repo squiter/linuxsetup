@@ -23,7 +23,6 @@ endef
 
 REQUIRED_MODULES = \
 	bash-completion	\
-	code		\
 	emacs		\
 	git		\
 	langtool	\
@@ -115,7 +114,7 @@ $(MODULE_DIR)/bash-completion: | packages
 	$(SUDO) cp -f bash_completion.d/* /etc/bash_completion.d/
 
 editor: emacs
-$(MODULE_DIR)/emacs: | packages code
+$(MODULE_DIR)/emacs: | packages
 	wget http://ftpmirror.gnu.org/emacs/$(EMACS).tar.xz
 	tar -xvf $(EMACS).tar.xz
 
