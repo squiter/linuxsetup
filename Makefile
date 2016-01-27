@@ -62,6 +62,8 @@ PACKAGES = \
 	git				\
 	gnupg				\
 	gnupg-agent			\
+	libreadline-dev			\
+	libssl-dev			\
 	ruby2.1				\
 	ruby2.1-dev			\
 	samba				\
