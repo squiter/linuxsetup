@@ -30,7 +30,6 @@ REQUIRED_MODULES = \
 
 OPTIONAL_MODULES = \
 	cask 		\
-	dconf		\
 	desktop		\
 	docker		\
 	slack		\
