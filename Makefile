@@ -30,7 +30,6 @@ REQUIRED_MODULES = \
 
 OPTIONAL_MODULES = \
 	cask 		\
-	cedilla		\
 	dconf		\
 	desktop		\
 	docker		\
