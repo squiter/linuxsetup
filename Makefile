@@ -55,11 +55,14 @@ PACKAGES = \
 	bash-completion			\
 	build-essential			\
 	curl				\
+	desktop-file-utils		\
 	dnsutils			\
 	ftp				\
 	git				\
 	gnupg				\
 	gnupg-agent			\
+	gvfs-bin			\
+	gvfs-common			\
 	libreadline-dev			\
 	libssl-dev			\
 	ruby2.1				\
