@@ -104,8 +104,8 @@ $(MODULE_DIR)/git: | packages
 	$(CODE_DIR)/linuxsetup/scripts/setup_git
 
 $(MODULE_DIR)/ruby: | packages
-	git clone https://github.com/sstephenson/rbenv.git $(HOME)/.rbenv --depth=1
-	git clone https://github.com/sstephenson/ruby-build.git $(HOME)/.rbenv/plugins/ruby-build --depth=1
+	if [ ! -d $(HOME)/.rbenv ]; then git clone https://github.com/sstephenson/rbenv.git $(HOME)/.rbenv --depth=1; fi
+	if [ ! -d $(HOME)/.rbenv ]; then git clone https://github.com/sstephenson/ruby-build.git $(HOME)/.rbenv/plugins/ruby-build --depth=1; fi
 
 	$(HOME)/.rbenv/bin/rbenv install $(RUBY_VERSION)
 	$(HOME)/.rbenv/bin/rbenv global $(RUBY_VERSION)
