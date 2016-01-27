@@ -150,7 +150,6 @@ $(MODULE_DIR)/desktop: REPOSITORIES = \
 		ppa:atareao/telegram			\
 		ppa:pidgin-developers/ppa
 $(MODULE_DIR)/desktop: | install spotify-repo
-	cd $(CODE_DIR)/emacs-dotfiles && $(SUDO) ./setup_shortcut
 
 $(MODULE_DIR)/keysnail: | desktop
 	wget https://github.com/mooz/keysnail/raw/master/keysnail.xpi
